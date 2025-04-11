@@ -1,0 +1,45 @@
+{
+  "name": "generate-env-from-ssm",
+  "description": "Automatically generate .env files for your monorepo apps by fetching environment variables from AWS SSM Parameter Store. Secure, efficient, and production-ready.",
+  "version": "0.0.1",
+  "private": true,
+  "keywords": [
+    "bash",
+    "composite-action",
+    "github-actions",
+    "aws",
+    "ssm",
+    "env",
+    "dotenv",
+    "turborepo",
+    "monorepo",
+    "environment-variables"
+  ],
+  "author": "evners",
+  "license": "MIT",
+  "engines": {
+    "node": "20.x"
+  },
+  "packageManager": "pnpm@10.8.0",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.3",
+    "husky": "^9.1.7",
+    "semantic-release": "^24.2.3",
+    "semantic-release-major-tag": "^0.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
